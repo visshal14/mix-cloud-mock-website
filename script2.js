@@ -36,11 +36,10 @@
 var timeline = gsap.timeline()
 
 timeline.to(".serviceh1", {
-
     x: 300,
     y: -200,
     fontSize: "30px",
-    duration: 10
+    duration: 10,
 }, ">")
 
 
@@ -91,7 +90,7 @@ timeline.fromTo(".fourth-2-left", {
 
 }, {
     opacity: 1,
-    yPercent: -220,
+    yPercent: -225,
     duration: 10
 }, "+=1")
 
@@ -156,7 +155,7 @@ ScrollTrigger.create({
     scroller: '#main',
     pin: true,
     scrub: true,
-    // markers: true,
+    markers: false,
     start: `top top`,
     end: ``,
     ease: "none",
